@@ -388,7 +388,7 @@
 			{
 				background: #f1f1f1;
 				background: rgba(0,0,0,0.05);
-				color: #444;
+				color: #444444;
 			}
 
 				input[type="button"].alt:hover,
@@ -409,6 +409,34 @@
 					background: rgba(0,0,0,0.15);
 				}
 
+				
+			input[type="button"].two,
+			input[type="submit"].two,
+			input[type="reset"].two,
+			.button.two
+			{
+				background: #f1f1f1;
+				background: rgba(0,0,0,0.05);
+				color: #444444;
+			}
+
+				input[type="button"].two:hover,
+				input[type="submit"].two:hover,
+				input[type="reset"].two:hover,
+				.button.two:hover
+				{
+					background: #e8e8e8;
+					background: rgba(0,0,0,0.085);
+				}
+
+				input[type="button"].two:active,
+				input[type="submit"].two:active,
+				input[type="reset"].two:active,
+				.button.two:active
+				{
+					background: #e4e4e4;
+					background: rgba(0,0,0,0.15);
+				}
 	/* List */
 
 		ul

@@ -212,7 +212,7 @@
 				#nav ul li:hover a,
 				#nav ul li:hover span
 				{
-					background: #fff;
+					background: #b2a59ba8;
 				}
 
 			#nav ul li.active
@@ -222,7 +222,7 @@
 				#nav ul li.active a,
 				#nav ul li.active span
 				{
-					background: #fff;
+					background: #b2a59ba8;
 				}
 
 			#nav ul li.current
@@ -237,7 +237,7 @@
 				
 	.dropotron
 	{
-		background: #fff;
+		background: #DED0B6;
 		letter-spacing: 0.025em;
 		color: #696969;
 		text-decoration: none;
@@ -251,7 +251,7 @@
 
 		.dropotron li
 		{
-			border-top: solid 1px #eee;
+			border-top: solid 1px #69696975;
 			line-height: 3em;
 		}
 
@@ -295,7 +295,7 @@
 				position: absolute;
 				top: -0.5em;
 				left: 1em;
-				border-bottom: solid 0.75em #ffffff;
+				border-bottom: solid 0.75em #DED0B6;
 				border-left: solid 0.75em transparent;
 				border-right: solid 0.75em transparent;
 				z-index: 1;

@@ -9,7 +9,8 @@
 
 	body
 	{
-		background-color:		#f7f7f7;
+		background-color:		#FAEED1;
+		/*
 		background-image:		-moz-linear-gradient(top, rgba(0,0,0,0.05), rgba(0,0,0,0)),		url('images/bg01.png');
 		background-image:		-webkit-linear-gradient(top, rgba(0,0,0,0.05), rgba(0,0,0,0)),	url('images/bg01.png');
 		background-image:		-o-linear-gradient(top, rgba(0,0,0,0.05), rgba(0,0,0,0)),		url('images/bg01.png');
@@ -18,6 +19,7 @@
 		background-position:	top left,														top left;
 		background-repeat:		repeat-x,														repeat;
 		background-size:		100% 30em,														auto;
+		*/
 	}
 
 		body.is-loading *
@@ -341,7 +343,7 @@
 			-webkit-appearance: none;
 			position: relative;
 			display: inline-block;
-			background: #0090c5;
+			background: #B2A59B;
 			color: #fff;
 			text-decoration: none;
 			border-radius: 6px;
@@ -361,7 +363,7 @@
 			input[type="reset"]:hover,
 			.button:hover
 			{
-				background: #10a0d5;
+				background: #968b82;
 			}
 		
 			input[type="button"]:active,
@@ -369,7 +371,7 @@
 			input[type="reset"]:active,
 			.button:active
 			{
-				background: #20b0e5;
+				background: #057eaa;
 			}
 		
 			.button.icon
@@ -387,7 +389,7 @@
 			.button.alt
 			{
 				background: #f1f1f1;
-				background: rgba(0,0,0,0.05);
+				background: #d88e72;
 				color: #444444;
 			}
 
@@ -397,7 +399,7 @@
 				.button.alt:hover
 				{
 					background: #e8e8e8;
-					background: rgba(0,0,0,0.085);
+					background: #c27f66;
 				}
 
 				input[type="button"].alt:active,
@@ -416,7 +418,7 @@
 			.button.two
 			{
 				background: #f1f1f1;
-				background: rgba(0,0,0,0.05);
+				background: #9eb17e;
 				color: #444444;
 			}
 
@@ -426,7 +428,7 @@
 				.button.two:hover
 				{
 					background: #e8e8e8;
-					background: rgba(0,0,0,0.085);
+					background: #8c9c6f;
 				}
 
 				input[type="button"].two:active,
@@ -505,7 +507,7 @@
 	
 		.box
 		{
-			background: #fff;
+			background: #DED0B6;
 			border-radius: 6px;
 			box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.015);
 			box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
@@ -647,7 +649,7 @@
 
 		#logo h1
 		{
-			background: #ff9822;
+			background: #607274;
 			color: #fff;
 			border-radius: 6px;
 			font-family: 'Oleo Script', cursive;

@@ -80,7 +80,6 @@
 		<div id="main-wrapper">
 				<div class="container">
 					<div class="row 200%">
-						<div class="8u important(collapse)">
 							<div id="content">
 
 								<!-- Content -->
@@ -90,6 +89,21 @@
 										<h2>Cartoon Cat</h2>
 											<p><b>Cartoon Cat was the first ever official indie game I released, releasing on the itch.io platform in late 2022. I developed the game entirely solo over the course of a few weeks much earlier and ultimately on a wim decided to throw it out there for people to see much after development had finished. It ended up garnering a plethora of positive views with over 1000 downloads which shocked me. On this page, I detail its release, player feedback/reviews, and also its development.</b></p>
                                             
+									<section>
+										<h3>Table of Contents</h3>
+										<ul class="style2">
+											<b>
+                                            <li><a href="#title">Introduction</a></li>
+											<li><a href="#outcome">Outcome & Analytics of Release</a></li>
+											<li><a href="#reviews">Other People's Thoughts, & Reviews on the Game</a></li>
+											<li><a href="#initialdev">Initial Development</a></li>
+											<li><a href="#pixelcam">Making a Pixelated Play-Station Style Camera</a></li>
+											<li><a href="#ai">Creating an Immersive AI</a></li>
+											<li><a href="#guidingplayer">Guiding the Player</a></li>
+											<li><a href="#tellingstory">Telling a Story through a Game</a></li>
+										</b>
+										</ul>
+									</section>
                                         </section>
 
                                         <section id="outcome">
@@ -114,19 +128,23 @@
                                             <h2>Other People's Thoughts, & Reviews on the Game</h2>
                                                 <p><b>As mentioned, the game got a lot of attention. Here is a gallery of reviews, comments, feedback, and more of the game by people:</b></p>
                                                 
-                                                <a class="image featured"><img src="images/games/cartooncat/cc_r1.PNG" alt="" /></a>
-                                                <a class="image featured"><img src="images/games/cartooncat/cc_r2.PNG" alt="" /></a>
-                                                <a class="image featured"><img src="images/games/cartooncat/cc_r3.PNG" alt="" /></a>
-                                                <a class="image featured"><img src="images/games/cartooncat/cc_r4.PNG" alt="" /></a>
+                                                <div class="6u">
+                                                    <a class="image featured"><img src="images/games/cartooncat/cc_r1.PNG" alt="" /></a>
+                                                    <a class="image featured"><img src="images/games/cartooncat/cc_r2.PNG" alt="" /></a>
+                                                    <a class="image featured"><img src="images/games/cartooncat/cc_r3.PNG" alt="" /></a>
+                                                    <a class="image featured"><img src="images/games/cartooncat/cc_r4.PNG" alt="" /></a>
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_r5.PNG" alt="" /></a>
-                                            </section>
+                                                </div>
+                                        </section>
                                         
                                             
                                         <section id="initialdev">
                                             <h2>Initial Development</h2>
                                                 <p><b>As for the game's development, a lot of prototyping and testing went into it. As you see in the final game, the camera and textures are in a pixelated old play-station style of graphics, as well as the environment and props being low poly. Initially, all of this was the same except the camera was going to be clear:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_cameraNoFilter.PNG" alt="" /></a>
+                                                </div>
                                                 <p><b>The player also was originally going to be equiped with a gun, but this was later scrapped for a hammer, camera, and flashlight. I also ended up as I said moving towards a PS style camera filter.</b></p>
                                                 
                                         </section>
@@ -136,13 +154,22 @@
                                             <h2>Making a Pixelated Play-Station Style Camera</h2>
                                                 <p><b>Here is what the final effect looks like:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_filteredCamera.PNG" alt="" /></a>
+                                                </div>
+                                                
                                                 <p><b>This is achieved in a rather complex way. I begin by giving the player a camera whose view of the world is constantly stored as a render texture. This texture is then compressed to 256x256 pixels:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_renderText.PNG" alt="" /></a>
+                                                </div>
+
                                                 <p><b>From here, this render texture is displayed on a 2D one-sided face in the game world:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_inWorldText.PNG" alt="" /></a>
+                                                </div>
+
                                                 <p><b>And a regular camera is placed in front of this to see this view. Also note that the user interface is overalayed on the final camera and not the one that goes to the render texture.</b></p>
                                                 
                                         </section>
@@ -151,16 +178,24 @@
                                             <h2>Creating an Immersive AI</h2>
                                                 <p><b>When you get to the end of the game, you are trapped in a maze with the Cartoon Cat himself, and he is given AI in order to correctly navigate said maze. This was done using some clever code in tandem with Unity's built-in NavMesh component/system. First, I set all of the floor and wall objects of the maze to be static objects via the ticker in the inspector. I then went to Window>AI>Navigation and baked the NavMesh for the entire level. Here is a visualization of said NavMesh for the maze level:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_navMesh.PNG" alt="" /></a>
+                                                </div>
+
                                                 <p><b>The blue represents valid positions for the AI to move upon. From here, I ended up adding a set of points to each intersection of hallways in the maze and a set of points for where the AI could choose to go next from the intersection they were currently at, it had a random chance to pick either of the connected directions to go in.</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_aiNodes.PNG" alt="" /></a>
+                                                </div>
+
                                                 <p><b>The cat would also, when it sees the player via a RayCast projected from it's head, would drop it's current target node and begin simply chasing the player while they were within 5 seconds of the most recent sighting. Here is some early development footage of this in action:</b></p>
 
                                                 
                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/TtikbjamvFU?start=19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_inWorldText.PNG" alt="" /></a>
+                                                </div>
                                                 <p><b>Of course, since there are no walls, you are practically always in range of him, but this demo video atleast showcases the cat's ability to follow the player and navigate around the map. The cat essentially uses a state machine of enums to determine his current behavior:</b></p>
                                                 
                                                 <code>
@@ -205,27 +240,39 @@
                                             <h2>Guiding the Player</h2>
                                                 <p><b>When it comes to telling the player what do to or how to interact, it can be pretty complex. I went with the approach of a task list, which would display when you were assigned a task, when you had one active, and even when you completed a task. It was also accompanied by sound effects:</b></p>
                                                 
+                                                
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_taskList.PNG" alt="" /></a>
+                                                </div>
                                                 <p><b><i>Task List in the Top Right Corner</i></b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_newTask.PNG" alt="" /></a>
+                                                </div>
                                                 <p><b><i>Displayed UI Element when a new Task is Assigned</i></b></p>
 
                                                 <p><b>This helps the player not only avoid confusion but also keep track of what to do if there are multiple tasks, like later in the game:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_multiTask.PNG" alt="" /></a>
+                                                </div>
                                                 <p><b><i>Example of Multiple Tasks in the Top Right</i></b></p>
 
                                                 <p><b>Additional ways of assisting the player are floating in-world indicators. I used these throughout the game to distinguish to the player what are props and what are actual interactable objects. There are two types, camera and eye icons. The camera icon indicates that the player needs to take a photograph using the Camera item of the given area:</b></p>
                                         
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_cameraIcon.PNG" alt="" /></a>
-
+                                                </div>
                                                 <p><b>And secondly the eye icon indicates that the object needs to be interacted with because it is readable/grabbable:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_eyeIcon.PNG" alt="" /></a>
+                                                </div>
                                                 <p><b><i>Example of a Grabbable Eye Icon Object</i></b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_readable.PNG" alt="" /></a>
+                                                </div>
                                                 <p><b><i>Example of a Readable Eye Icon Object</i></b></p>
                                         </section>
 
@@ -237,39 +284,42 @@
                                                 <h3>Visual Story Telling</h3>
                                                 <p><b>Throughout the game, the environment tells the most of the story, and it also connects with readable story elements throughout the game too. For example, in the first newspaper, found on the hood of a police car, talks about the police officer and his purpose of being here, which is reinforced by his abandoned police car found outside when you first start the game:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_ve1.PNG" alt="" /></a>
-                                                
+                                                </div>
                                                 <p><b>And there are many more elements that tell the story and tie in with other storytelling elements:</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_ve2.PNG" alt="" /></a>
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_ve3.PNG" alt="" /></a>
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_maze_ve1.PNG" alt="" /></a>
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_maze_ve2.PNG" alt="" /></a>
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_maze_ve3.PNG" alt="" /></a>
-                                                
+                                                </div>
                                                 <h3>Text-Based/Straight Forward Story Telling</h3>
                                                 <p><b>Throughout the game, the player finds News Papers that are the heavy lifters of the story telling. They include a date, allowing the player to piece together a timeline of events, and they also tell the story of what happened.</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_np1.PNG" alt="" /></a>
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_maze_np1.PNG" alt="" /></a>
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_maze_np2.PNG" alt="" /></a>
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_maze_np3.PNG" alt="" /></a>
-                                                
+                                                </div>
                                                 <h3>Dialouge Story Telling/Assistance</h3>
                                                 <p><b>Additionally, a dialouge system, where text is displayed at the bottom of the player's screen, is also used. This helps guide the player if they don't understand something and also helps build the story.</b></p>
                                                 
+                                                <div class="6u">
                                                 <a class="image featured"><img src="images/games/cartooncat/cc_d1.PNG" alt="" /></a>
-                                                
+                                                </div>
                                         </section>
                                         
 									</article>
 
 							</div>
-						</div>
+                        <!--
 						<div class="4u">
 							<div id="sidebar">
 						
-								<!-- Sidebar -->
 									<section>
 										<h3>Table of Contents</h3>
 										<ul class="style2">
@@ -288,6 +338,7 @@
 						
 							</div>
 						</div>
+                    -->
 					</div>
 				</div>
 		</div>

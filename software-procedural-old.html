@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Nicholas Niles - Celestial Shootout</title>
+		<title>Nicholas Niles - Infinite Procedural Generator</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -23,7 +23,7 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="homepage">
+	<body class="homepage" style="width:100%;">
 
 		<!-- Header -->
 			<div id="header-wrapper">
@@ -74,39 +74,49 @@
 				</header>
 			</div>
 
+		<!-- Banner -->
+		<div id="banner-wrapper"style="width:100%;height:10%">
+		</div>
+
+		<script>
+			function check_height(button){
+				let item = document.getElementById("height");
+				document.getElementById("height").innerHTML = screen.height;
+
+				button.innerHTML = "WOOO";
+			}
+			check_height();
+		</script>
+
+	<!--<button onclick="check_height(this);">click</button>-->
+		
 		<div id="bannertitle" class="box2">
-			<h2>Celestial Shootout</h2>
+			<h2>Infinite Procedural</h2>
 			<article><b>2023</b></article>
 		</div>
 
 			<!-- Features -->
-			<div id="features-wrapper"style="margin-top: -25px;">
+			<div id="features-wrapper">
+                
 				<div class="container">
 					<div class="row">
-						<div class="4u">
+                        
+                        
+						<div class="6u">
 							<!-- Image -->
 							<section class="box feature">
-								<a class="image featured"><img src="images/games/celestialshootout/comp-off-combo .gif" alt="" /></a>
+								<a class="image featured"><img src="images/software/procedural/software_procedural_wallpaper.jpg" alt="" /></a>
 								<div class="inner" style="margin-top: -25px;">
-									<p style="margin-top: 8px;">This gif displays the combo system in full effect. Consecutive kills by the player on any enemy type will increase the current combo, and once it reaches five or any combo following five, it increases the player's health by one health point. Missing any shot will reset this combo, but one a room is cleared the player can freely shoot without losing their combo until they move on to the next room.</p>
+									<p style="margin-top: 8px;">The player is seen in the spruce biome with a patch of desert in front equipt with full iron armor (helmet, chestplate, and gloves) as well as an iron shield & sword.</article></b>
 								</div>
 							</section>
 						</div>
-						<div class="4u">
+						<div class="6u">
 							<!-- Image -->
 							<section class="box feature">
-								<a class="image featured"><img src="images/games/celestialshootout/comp-off-trickshot.gif" alt="" /></a>
+								<a class="image featured"><img src="images/software/procedural/software_procedural_wallpaper.jpg" alt="" /></a>
 								<div class="inner" style="margin-top: -25px;">
-									<p style="margin-top: 8px;">The player in this gif is fighting off a set of more challenging enemies, enemies which specifically target and go after the player. These are found in later levels of the game but seen here are killed consecutively giving the player a combo of two. You can also see the player check their watch toward the end of the gif, which indicates to the player their current health points as small red cubes.</p>
-								</div>
-							</section>
-						</div>
-						<div class="4u">
-							<!-- Image -->
-							<section class="box feature">
-								<a class="image featured"><img src="images/games/celestialshootout/comp-off-fighttillend.gif" alt="" /></a>
-								<div class="inner" style="margin-top: -25px;">
-									<p style="margin-top: 8px;">Lastly, the player is pictured fighting the hardest enemy in the game. This enemy, inspired by Half-Life 2's Combine Elite Soldier in terms of design & look is a combination of the yellow impulse enemy seen in gif two and a new enemy type all together. It not only launches itself at the player to deal melee damage, but it also shoots a damaging beam directly at the player too at the same time.</p>
+									<p style="margin-top: 8px;">The player is seen in the spruce biome with a patch of desert in front equipt with full iron armor (helmet, chestplate, and gloves) as well as an iron shield & sword.</article></b>
 								</div>
 							</section>
 						</div>
@@ -115,34 +125,36 @@
 			</div>
 			
 			<!--SECTION - WHAT-->
-			<p></p>
+			<article><b></article></b>
 			<div id="banner-wrapper">
 				<div id="banner" class="box container">
 					<div class="row">
-						<h2>What is Celestial Shootout?</h2>
-						<p>Celestial Shootout is a game I designed start to finish entirely in one week at a George Mason University game development course. I centered the game design entirely around a single mechanic: gun knockback. Being in a zero gravity environment, the player must use their weapon as a means of moving around the level while also using the gun to fight off enemies. It is a challenging arcade shooter about clearing rooms of enemies while also managing your momentum and keeping control of your player.</p>
+						<h2>What is Proelium?</h2>
+						<article><b>Proelium is a multiplayer survival sandbox I developed over the course of 3 years. Inspired by my favorite games like Terraria & Minecraft, Proelium embodied my idea of an ideal game. I developed everything myself, including artwork, animations, sound design, coding, and networking.</b></article>
 					</div>
 				</div>
 			</div>
-
-			<!--SECTION - ITCH PAGE-->
-			<p></p>
+			
+			
+			<!--SECTION - HOW-->
+			<article><b></article></b>
 			<div id="banner-wrapper">
 				<div id="banner" class="box container">
 					<div class="row">
-						<h2 style="margin-top: 30px;">Download</h2>
-						<p></p>
-						<iframe frameborder="0" src="https://itch.io/embed/2171060?link_color=0484d1&amp;border_color=ffffff" width="552" height="167"><a href="https://nicholas-niles.itch.io/celestial-shootout">Celestial Shootout by Nicholas Niles</a></iframe>
-					</div>
-				</div>
-			</div>
+							<h2>How it's made</h2>
+							<article><b>With over 2000 lines of C# code in the player controller script alone, Proleium was quite a complex 
+							project. Proelium was made using the Unity game engine with code written in C#. Its networking and 
+							multiplayer systems were also written in C# utilizing the Photon Networking API as a backbone. For 
+							artwork I used the pixel art tool Aseprite and for sound effects I recorded them myself using my phone 
+							and the editing software Shotcut, a tool which I also used to make the trailer for the game. Being 
+							a solo project I wrote all of the code as well as doing all of the artwork. Everything you see in 
+							screenshots and the game's trailer was a result of my own creative vision and work.</article></b>
 
-		<!-- Download Section -->
-		<div id="banner-wrapper">
-			<div id="banner" class="box container">
-				<a href="https://nicholas-niles.itch.io/celestial-shootout" target="_blank" class="button big icon fa-arrow-circle-right">Go To Store Page</a>
+					</div>
+					
+				</div>
+				
 			</div>
-		</div>
 
 		<!-- Footer -->
 		<div id="header-wrapper">

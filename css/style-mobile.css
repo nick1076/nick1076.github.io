@@ -107,7 +107,7 @@
 		.box
 		{
 			padding: 15px 15px 15px 15px;
-			margin: 0;
+			margin: auto;
 		}		
 
 			.box.feature
@@ -316,6 +316,99 @@
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
+
+#bannertitleoneline
+{
+	padding: 1.25em;
+	width:92.5%;
+	height:125px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+	#bannertitleoneline h2
+	{
+		font-size: 3.5em;
+		margin: 0.1em 0 0.35em 0;
+		line-height: 1em;
+	}
+
+	#bannertitleoneline p
+	{
+		font-size: 2.75em;
+		line-height: 1.35em;
+		margin: 0;
+	}
+	
+	#bannertitleoneline .button
+	{
+		width: 100%;
+		margin-bottom: 0.5em;
+	}
+	
+	#bannertitleoneline .button.icon:before
+	{
+		position: absolute;
+		right: 0.15em;
+		top: 50%;
+		margin-top: -0.5em;
+	}
+
+	#bannertitleoneline .button.alt
+	{
+		margin-bottom: 0;
+	}
+	
+	#bannertitleoneline ul
+	{
+		margin: 0 0 0 2em;
+	}
+	#bannertitle
+	{
+		padding: 1.25em;
+		width:92.5%;
+		height:175px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+	}
+		#bannertitle h2
+		{
+			font-size: 3.5em;
+			margin: 0.1em 0 0.35em 0;
+			line-height: 1em;
+		}
+
+		#bannertitle p
+		{
+			font-size: 2.75em;
+			line-height: 1.35em;
+			margin: 0;
+		}
+		
+		#bannertitle .button
+		{
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+		
+		#bannertitle .button.icon:before
+		{
+			position: absolute;
+			right: 0.15em;
+			top: 50%;
+			margin-top: -0.5em;
+		}
+
+		#bannertitle .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#bannertitle ul
+		{
+			margin: 0 0 0 2em;
+		}
 
 	#banner
 	{

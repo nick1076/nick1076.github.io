@@ -12,6 +12,11 @@
 
 /* Container */
 
+	.container2 {
+		width:5%;
+		height: 5%;
+	}
+
 	.container {
 		margin-left: auto;
 		margin-right: auto;

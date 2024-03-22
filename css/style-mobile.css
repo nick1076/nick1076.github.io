@@ -219,6 +219,61 @@
 			{
 				opacity: 1;
 			}
+	
+	.showcase
+	{
+		padding: 2em;
+		height: 600px;
+		margin-top: 20px;
+	}
+		
+		.showcase.feature
+		{
+			padding: 0;
+		}
+			
+			.showcase.feature .inner
+			{
+				margin-top: -50px;
+				padding: 4em 2em 3em 2em;
+			}
+			
+			.showcase.feature a{
+				margin-top: 0px;
+				margin-left: 5px;
+				margin-bottom: 60px;
+			}
+
+			.showcase.feature h2
+			{
+				margin-top: -17.5px;
+				font-size: 1.35em;
+			}
+
+			.showcase.feature h5
+			{
+				margin-top: 15px;
+				font-size: 1em;
+			}
+
+			.showcase.feature p
+			{
+				margin-top: 100px;
+			}
+
+			.showcase.feature .image
+			{
+				position: relative;
+				margin: 0;
+			}
+
+				.showcase.feature .image img
+				{
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+		
+		
 
 	#navPanel
 	{
@@ -317,14 +372,142 @@
 /* Banner                                                                        */
 /*********************************************************************************/
 
-#bannertitleoneline
+#navbarimproved
+{
+	margin-top: 0px;
+}
+
+#footerimproved
+{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: -150px;
+}
+
+	#footerimproved h1
+	{
+		display: inline-block;
+		margin: 0 0 0.2em 0;
+		padding: 0.25em 0.2em 0.25em 0.2em;
+		font-size: 3.25em;
+		letter-spacing: 0.05em;
+	}
+
+	#footerimproved span
+	{
+		display: block;
+		letter-spacing: 0.025em;
+		font-size: 0.9em;
+		margin: 0;
+	}
+
+#bannertitleonly
+	{
+		padding: .4em;
+		width:92.5%;
+		height:75px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		margin-top: -30px;
+		margin-bottom: -25px;
+	}
+		#bannertitleonly h2
+		{
+			font-size: 3.5em;
+			margin: 0.1em 0 0.35em 0;
+			line-height: 1.15em;
+		}
+
+		#bannertitleonly p
+		{
+			font-size: 2.75em;
+			line-height: 1.35em;
+			margin: 0;
+		}
+		
+		#bannertitleonly .button
+		{
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+		
+		#bannertitleonly .button.icon:before
+		{
+			position: absolute;
+			right: 0.15em;
+			top: 50%;
+			margin-top: -0.5em;
+		}
+
+		#bannertitleonly .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#bannertitleonly ul
+		{
+			margin: 0 0 0 2em;
+		}
+
+#bannertitlethreeline
 {
 	padding: 1.25em;
 	width:92.5%;
-	height:125px;
+	height:240px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align:center;
+}
+	#bannertitlethreeline h2
+	{
+		font-size: 3.5em;
+		margin: 0.1em 0 0.35em 0;
+		line-height: 1.15em;
+	}
+
+	#bannertitlethreeline p
+	{
+		font-size: 2.75em;
+		line-height: 1.35em;
+		margin: 0;
+	}
+	
+	#bannertitlethreeline .button
+	{
+		width: 100%;
+		margin-bottom: 0.5em;
+	}
+	
+	#bannertitlethreeline .button.icon:before
+	{
+		position: absolute;
+		right: 0.15em;
+		top: 50%;
+		margin-top: -0.5em;
+	}
+
+	#bannertitlethreeline .button.alt
+	{
+		margin-bottom: 0;
+	}
+	
+	#bannertitlethreeline ul
+	{
+		margin: 0 0 0 2em;
+	}
+
+
+#bannertitleoneline
+{
+	width:92.5%;
+	height:85px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	padding: .4em;
+	margin-top: -30px;
+	margin-bottom: -25px;
 }
 	#bannertitleoneline h2
 	{
@@ -338,6 +521,10 @@
 		font-size: 2.75em;
 		line-height: 1.35em;
 		margin: 0;
+	}
+
+	#bannertitleoneline article{
+		margin-top: -15px;
 	}
 	
 	#bannertitleoneline .button
@@ -367,16 +554,19 @@
 	{
 		padding: 1.25em;
 		width:92.5%;
-		height:175px;
+		height:155px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align:center;
+		padding: .4em;
+		margin-top: -30px;
+		margin-bottom: -25px;
 	}
 		#bannertitle h2
 		{
 			font-size: 3.5em;
 			margin: 0.1em 0 0.35em 0;
-			line-height: 1em;
+			line-height: 1.15em;
 		}
 
 		#bannertitle p
@@ -384,6 +574,10 @@
 			font-size: 2.75em;
 			line-height: 1.35em;
 			margin: 0;
+		}
+
+		#bannertitle article{
+			margin-top: -15px;
 		}
 		
 		#bannertitle .button
@@ -406,6 +600,214 @@
 		}
 		
 		#bannertitle ul
+		{
+			margin: 0 0 0 2em;
+		}
+
+	#bannertitlewithbutton
+	{
+		padding: 1.25em;
+		width:92.5%;
+		height:230px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		margin-top: -25px;
+	}
+		#bannertitlewithbutton h2
+		{
+			font-size: 3.5em;
+			margin: 0.1em 0 0.35em 0;
+			line-height: 1.15em;
+		}
+
+		#bannertitlewithbutton p
+		{
+			font-size: 2.75em;
+			line-height: 1.35em;
+			margin: 0;
+		}
+		
+		#bannertitlewithbutton .button
+		{
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+		
+		#bannertitlewithbutton .button.icon:before
+		{
+			position: absolute;
+			right: 0.15em;
+			top: 50%;
+			margin-top: -0.5em;
+		}
+
+		#bannertitlewithbutton .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#bannertitlewithbutton ul
+		{
+			margin: 0 0 0 2em;
+		}
+
+		
+	#bannerwithbutton
+	{
+		padding: 1.25em;
+		width:92.5%;
+		height:85px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		margin-top: -25px;
+	}
+		#bannerwithbutton h2
+		{
+			font-size: 3.5em;
+			margin: 0.1em 0 0.35em 0;
+			line-height: 1.15em;
+		}
+
+		#bannerwithbutton p
+		{
+			font-size: 2.75em;
+			line-height: 1.35em;
+			margin: 0;
+		}
+		
+		#bannerwithbutton .button
+		{
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+		
+		#bannerwithbutton .button.icon:before
+		{
+			position: absolute;
+			right: 0.15em;
+			top: 50%;
+			margin-top: -0.5em;
+		}
+
+		#bannerwithbutton .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#bannerwithbutton ul
+		{
+			margin: 0 0 0 2em;
+		}
+
+		
+	#bannerhomepage
+	{
+		padding: 2em;
+		width:92.5%;
+		height: 1115px;
+		margin-top: -25px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		#bannerhomepage h2
+		{
+			font-size: 3.5em;
+			margin: 0.1em 0 0.35em 0;
+			line-height: 1.3em;
+		}
+
+		#bannerhomepage p
+		{
+			font-size: 2.75em;
+			line-height: 1.15em;
+			margin: 0;
+		}
+		
+		#bannerhomepage .button
+		{
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+		
+		#bannerhomepage .button.icon:before
+		{
+			position: absolute;
+			right: 0.15em;
+			top: 50%;
+			margin-top: -0.5em;
+		}
+
+		#bannerhomepage .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#bannerhomepage ul
+		{
+			margin: 0 0 0 2em;
+		}
+
+	
+	#jobentry
+	{
+		padding: 1.25em;
+		width:92.5%;
+		height:fit-content;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+		#jobentry h2
+		{
+			font-size: 2em;
+			margin: 0.1em 0 -.4em 0;
+			line-height: 1.15em;
+		}
+		
+		#jobentry h3
+		{
+			font-size: 1.35em;
+			margin: 0.1em 0 -.4em 0;
+			line-height: 1.15em;
+			margin-top: -40px;
+			text-align: center;
+		}
+		
+		#jobentry a
+		{
+			margin-top: -2.5px;
+			text-align: center;
+		}
+
+		#jobentry p
+		{
+			font-size: 1.5em;
+			line-height: 1.15em;
+			margin: 0;
+		}
+		
+		#jobentry .button
+		{
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+		
+		#jobentry .button.icon:before
+		{
+			position: absolute;
+			right: 0.15em;
+			top: 50%;
+			margin-top: -0.5em;
+		}
+
+		#jobentry .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#jobentry ul
 		{
 			margin: 0 0 0 2em;
 		}
@@ -487,7 +889,11 @@
 
 	#copyright
 	{
+		margin-bottom: 50px;
+		margin-top: -40px;
 		padding: 2em 0 0 0;
-		border-top: solid 1px #ccc;
-		margin: 4em 0 0 0;
 	}
+		#copyright p{
+			margin-bottom: -400px;
+			line-height: 2em;
+		}

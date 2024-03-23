@@ -100,7 +100,7 @@
 	.showcase
 	{
 		padding: 2em;
-		height: 700px;
+		height: fit-content;
 	}
 		
 		.showcase.feature
@@ -147,6 +147,9 @@
 				{
 					border-bottom-left-radius: 0;
 					border-bottom-right-radius: 0;
+				}
+				.showcase.feature .image:hover{
+					opacity: 0.75;
 				}
 
 
@@ -373,10 +376,9 @@
 {
 	text-align: center;
 	padding: 1.1em;
-	width:82.5%;
 	height: 105px;
-	margin-top: -55px;
-	margin-bottom: -30px;
+	margin-top: -65px;
+	margin-bottom: -50px;
 }
 	#bannertitleonlytwolinemobile h2
 	{
@@ -419,10 +421,9 @@
 {
 	text-align: center;
 	padding: 1.1em;
-	width:82.5%;
 	height: 105px;
 	margin-top: -55px;
-	margin-bottom: -30px;
+	margin-bottom: -60px;
 }
 	#bannertitleonly h2
 	{
@@ -464,7 +465,6 @@
 #bannertitlethreeline
 {
 	padding: 1.1em;
-	width:82.5%;
 	height: 150px;
 	margin-top: -50px;
 }
@@ -508,7 +508,6 @@
 #bannertitleoneline
 {
 	padding: 1.1em;
-	width:82.5%;
 	height: 150px;
 	margin-top: -50px;
 }
@@ -552,7 +551,6 @@
 	#bannertitle
 	{
 		padding: 1.1em;
-		width:82.5%;
 		height: 150px;
 		margin-top: -50px;
 	}
@@ -592,12 +590,55 @@
 		{
 			margin: 0 0 0 2em;
 		}
+	
+	#floatingsection
+	{
+		padding: 2em;
+		height: fit-content;
+		margin-top: 0px;
+	}
+		#floatingsection h2
+		{
+			font-size: 3.5em;
+			line-height: 1.15em;
+			margin: 0.1em 0 0.35em 0;
+		}
+
+		#floatingsection p
+		{
+			font-size: 2em;
+			line-height: 1.45em;
+			margin: 0;
+		}
+		
+		#floatingsection .button
+		{
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+		
+		#floatingsection .button.icon:before
+		{
+			position: absolute;
+			right: 0.15em;
+			top: 50%;
+			margin-top: -0.5em;
+		}
+
+		#floatingsection .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#floatingsection ul
+		{
+			margin: 0 0 0 2em;
+		}
 		
 	#bannerhomepage
 	{
 		padding: 2em;
-		width:82.5%;
-		height: 670px;
+		height: fit-content;
 		margin-top: -50px;
 	}
 		#bannerhomepage h2
@@ -641,8 +682,8 @@
 	#jobentry
 	{
 		padding: 1.25em;
-		width:82.5%;
 		height:fit-content;
+		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 20px;
@@ -705,13 +746,13 @@
 		#bannertitlewithbutton
 	{
 		padding: 1.1em;
-		width:82.5%;
-		height: 185px;
+		height: 155px;
 		margin-top: -50px;
+		width: 70%;
 	}
 		#bannertitlewithbutton h2
 		{
-			font-size: 3.5em;
+			font-size: 2.5em;
 			margin: 0.1em 0 0.35em 0;
 		}
 
@@ -749,7 +790,6 @@
 		#bannerwithbutton
 	{
 		padding: 1.1em;
-		width:82.5%;
 		height: 130px;
 		margin-top: -15px;
 	}

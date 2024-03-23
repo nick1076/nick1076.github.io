@@ -405,6 +405,56 @@
 		margin: 0;
 	}
 
+	
+#bannertitleonlytwolinemobile
+{
+	padding: .4em;
+	width:92.5%;
+	height:130px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	margin-top: -30px;
+	margin-bottom: -25px;
+}
+	#bannertitleonlytwolinemobile h2
+	{
+		font-size: 3.5em;
+		margin: 0.1em 0 0.35em 0;
+		line-height: 1.15em;
+	}
+
+	#bannertitleonlytwolinemobile p
+	{
+		font-size: 2.75em;
+		line-height: 1.35em;
+		margin: 0;
+	}
+	
+	#bannertitleonlytwolinemobile .button
+	{
+		width: 100%;
+		margin-bottom: 0.5em;
+	}
+	
+	#bannertitleonlytwolinemobile .button.icon:before
+	{
+		position: absolute;
+		right: 0.15em;
+		top: 50%;
+		margin-top: -0.5em;
+	}
+
+	#bannertitleonlytwolinemobile .button.alt
+	{
+		margin-bottom: 0;
+	}
+	
+	#bannertbannertitleonlytwolinemobileitleonly ul
+	{
+		margin: 0 0 0 2em;
+	}
+
 #bannertitleonly
 	{
 		padding: .4em;

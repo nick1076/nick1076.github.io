@@ -228,7 +228,7 @@
 	{
 		padding: 2em;
 		height: 600px;
-		margin-top: 20px;
+		margin-top: 15px;
 	}
 		
 		.showcase.feature
@@ -276,6 +276,10 @@
 					border-bottom-left-radius: 0;
 					border-bottom-right-radius: 0;
 				}
+
+	#spec_about_title{
+		margin-top: -30px;
+	}
 	
 	#floatingsection
 	{
@@ -377,6 +381,7 @@
 	
 	#features-wrapper
 	{
+		margin-top: -45px;
 		padding: 0 15px 40px 15px;
 	}
 	
@@ -768,7 +773,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		text-align:center;
-		margin-top: -25px;
+		margin-top: -10px;
 	}
 		#bannerwithbutton h2
 		{

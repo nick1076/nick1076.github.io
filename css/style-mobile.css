@@ -320,6 +320,16 @@
 		{
 			margin: 0 0 0 2em;
 		}
+	
+		.imagetextshowcase
+	{
+		padding: 2em;
+		height: fit-content;
+		margin-top: -0pxpx;
+	}
+		.imagetextshowcase p{
+			line-height: 1.75em;
+		}
 		
 
 	#navPanel

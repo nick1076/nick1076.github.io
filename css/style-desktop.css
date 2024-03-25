@@ -151,6 +151,17 @@
 				.showcase.feature .image:hover{
 					opacity: 0.75;
 				}
+	
+	
+	.imagetextshowcase
+	{
+		padding: 2em;
+		height: fit-content;
+		margin-top: -50px;
+	}
+		.imagetextshowcase p{
+			line-height: 1.75em;
+		}
 
 
 /*********************************************************************************/
@@ -601,14 +612,15 @@
 		{
 			font-size: 3.5em;
 			line-height: 1.15em;
-			margin: 0.1em 0 0.35em 0;
+			margin-top: -30px;
 		}
 
 		#floatingsection p
 		{
 			font-size: 2em;
 			line-height: 1.45em;
-			margin: 0;
+			margin-top: -80px;
+			margin-bottom: -0px;
 		}
 		
 		#floatingsection .button

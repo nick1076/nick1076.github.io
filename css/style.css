@@ -363,7 +363,7 @@
 			input[type="reset"]:hover,
 			.button:hover
 			{
-				background: #968b82;
+				background: #a0948a;
 			}
 		
 			input[type="button"]:active,
@@ -371,7 +371,7 @@
 			input[type="reset"]:active,
 			.button:active
 			{
-				background: #057eaa;
+				background: #786e66;
 			}
 		
 			.button.icon
@@ -391,6 +391,10 @@
 			}
 			.button.back:hover{
 				background:#a03737
+			}
+
+			.button.back:active{
+				background:#782929
 			}
 		
 			input[type="button"].alt,

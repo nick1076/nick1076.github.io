@@ -296,6 +296,11 @@
 	#spec_titletoshowcase_mobilespacer_threeline{
 		margin-top: 140px;
 	}
+
+	#spec_projectbuttons{
+		margin-top: 10px;
+		margin-bottom: -25px;
+	}
 	
 	#floatingsection
 	{

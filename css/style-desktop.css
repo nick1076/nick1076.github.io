@@ -739,8 +739,8 @@
 		#jobentry p
 		{
 			font-size: 1.5em;
-			line-height: 1.15em;
-			margin: 0;
+			line-height: 1.35em;
+			margin-top: -20px;
 		}
 		
 		#jobentry .button

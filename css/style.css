@@ -382,6 +382,16 @@
 				{
 					position: relative;
 				}
+				
+			.button.back
+			{
+				background: #f1f1f1;
+				background: #ca4d4d;
+				color: #ffffff;
+			}
+			.button.back:hover{
+				background:#a03737
+			}
 		
 			input[type="button"].alt,
 			input[type="submit"].alt,

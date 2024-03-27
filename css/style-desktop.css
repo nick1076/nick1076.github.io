@@ -51,6 +51,20 @@
 					margin-right: 0.5em;
 					top: 0.05em;
 				}
+			
+			.button.icon.square
+			{
+				
+			}
+
+				.button.icon.square:before
+				{
+					width: 100%;
+					font-size: 4em;
+					top: .5em;
+					margin-left: auto;
+					margin-right: auto;
+				}
 
 	/* Box */	
 	
@@ -664,7 +678,7 @@
 	#bannerhomepage
 	{
 		padding: 2em;
-		height: fit-content;
+		height: 675px;
 		margin-top: -50px;
 	}
 		#bannerhomepage h2
@@ -678,20 +692,6 @@
 			font-size: 2.75em;
 			line-height: 1.35em;
 			margin: 0;
-		}
-		
-		#bannerhomepage .button
-		{
-			width: 100%;
-			margin-bottom: 0.5em;
-		}
-		
-		#bannerhomepage .button.icon:before
-		{
-			position: absolute;
-			right: 0.15em;
-			top: 50%;
-			margin-top: -0.5em;
 		}
 
 		#bannerhomepage .button.alt
@@ -780,6 +780,25 @@
 			font-size: 2.5em;
 			margin: 0.1em 0 0.35em 0;
 		}
+	
+	#homepage_quadbutton_overallspacer{
+		margin-left: -70px;
+	}
+	
+	#homepage_quadbutton_3uspacer{
+		margin-right: 190px;
+	}
+
+	#squarelayouttextformat{
+		font-size: 0.5em;
+		margin-top: 50px;
+	}
+
+	#homepagebuttons .button.square{
+		width: 370px;
+		height: 195px;
+		margin-top: 11px;
+	}
 
 	#bannertitlewithbutton
 	{

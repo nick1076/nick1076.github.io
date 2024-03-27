@@ -277,6 +277,46 @@
 					border-bottom-right-radius: 0;
 				}
 
+	
+	#homepagebuttons .button.square{
+		height: 120px;
+		margin: 5px;
+	}
+	
+	#homepage_quadbutton_overallspacer{
+		margin-top: 10px;
+		margin-left: -55px;
+	}
+	
+	#homepage_quadbutton_3uspacer{
+		margin-top: -20px;
+	}
+
+	#homepage_quadbutton_secondbuttonspacer{
+		margin-top: 0px;
+	}
+
+	#homepage_quadbutton_fourthbuttonspacer{
+		margin-top: 5px;
+	}
+
+	#homepage_quadbutton_lower3uspacer{
+		margin-top: 0px;
+	}
+
+	#homepagemobilespacerlower{
+		margin-top: 100px;
+	}
+
+
+
+
+	#squarelayouttextformat{
+		font-size: .5em;
+		width: 100%;
+		margin-top: 65px;
+	}
+
 	#spec_about_title{
 		margin-top: -30px;
 	}
@@ -335,6 +375,20 @@
 			top: 50%;
 			margin-top: -0.5em;
 		}
+			
+		.button.icon.square
+		{
+			
+		}
+
+			.button.icon.square:before
+			{
+				font-size: 3em;
+				top: .5em;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 		#floatingsection .button.alt
 		{
@@ -489,17 +543,16 @@
 {
 	padding: .4em;
 	width:92.5%;
-	height:130px;
+	height:fit-content;
 	margin-left: auto;
 	margin-right: auto;
 	text-align:center;
-	margin-top: -30px;
-	margin-bottom: -25px;
 }
 	#bannertitleonlytwolinemobile h2
 	{
 		font-size: 3.5em;
-		margin: 0.1em 0 0.35em 0;
+		margin-top: auto;
+		margin-bottom: auto;
 		line-height: 1.15em;
 	}
 
@@ -859,7 +912,7 @@
 	{
 		padding: 2em;
 		width:92.5%;
-		height: 1040px;
+		height: 1400px;
 		margin-top: -25px;
 		margin-left: auto;
 		margin-right: auto;

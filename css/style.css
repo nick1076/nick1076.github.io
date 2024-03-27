@@ -363,7 +363,7 @@
 			input[type="reset"]:hover,
 			.button:hover
 			{
-				background: #a0948a;
+				background: #a79a90;
 			}
 		
 			input[type="button"]:active,
@@ -371,7 +371,8 @@
 			input[type="reset"]:active,
 			.button:active
 			{
-				background: #786e66;
+				background: #e4e4e4;
+				background: rgba(0,0,0,0.15);
 			}
 		
 			.button.icon
@@ -390,11 +391,16 @@
 				color: #ffffff;
 			}
 			.button.back:hover{
-				background:#a03737
+				background: #af4141;
 			}
 
 			.button.back:active{
-				background:#782929
+				background: #e4e4e4;
+				background: rgba(0,0,0,0.15);
+			}
+
+			.button.icon.square{
+				text-align: center;
 			}
 		
 			input[type="button"].alt,
@@ -404,7 +410,7 @@
 			{
 				background: #f1f1f1;
 				background: #d88e72;
-				color: #444444;
+				color: #ffffff;
 			}
 
 				input[type="button"].alt:hover,
@@ -413,7 +419,7 @@
 				.button.alt:hover
 				{
 					background: #e8e8e8;
-					background: #c27f66;
+					background: #ca846b;
 				}
 
 				input[type="button"].alt:active,
@@ -433,7 +439,7 @@
 			{
 				background: #f1f1f1;
 				background: #9eb17e;
-				color: #444444;
+				color: #ffffff;
 			}
 
 				input[type="button"].two:hover,
@@ -442,13 +448,41 @@
 				.button.two:hover
 				{
 					background: #e8e8e8;
-					background: #8c9c6f;
+					background: #95a777;
 				}
 
 				input[type="button"].two:active,
 				input[type="submit"].two:active,
 				input[type="reset"].two:active,
 				.button.two:active
+				{
+					background: #e4e4e4;
+					background: rgba(0,0,0,0.15);
+				}
+			
+			input[type="button"].three,
+			input[type="submit"].three,
+			input[type="reset"].three,
+			.button.three
+			{
+				background: #f1f1f1;
+				background: #8486c5;
+				color: #ffffff;
+			}
+
+				input[type="button"].three:hover,
+				input[type="submit"].three:hover,
+				input[type="reset"].three:hover,
+				.button.three:hover
+				{
+					background: #e8e8e8;
+					background: #7c7daa;
+				}
+
+				input[type="button"].three:active,
+				input[type="submit"].three:active,
+				input[type="reset"].three:active,
+				.button.three:active
 				{
 					background: #e4e4e4;
 					background: rgba(0,0,0,0.15);
